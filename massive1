@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+void print_array(int a[], const int n) {
+	int i;
+	for (i = 0; i < n; i++) cout << a[i] << " ";
+}
+int main() {
+	int b; cin >> b;
+	int d; cin >> d;
+	int i; const int n = 10;
+	int a[n];
+	for (i = 0; i < n; i++) a[i] = b + d * i;
+	print_array(a, 10);
+}
